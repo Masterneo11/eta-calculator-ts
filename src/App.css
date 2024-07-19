@@ -1,0 +1,89 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-image: linear-gradient(to right, light orange , lightyellow);
+  display: flex;
+  flex-direction: column;
+  /* height: 800px;
+  width: 1000px; */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.calculate-div {
+  display: flex;
+  background-color: rgb(117, 175, 191);
+  margin-top: 100px;
+  height: 50px;
+  justify-content: space-around;
+}
+
+.speed {
+  display: flex;
+  background-color: rgb(149, 201, 209);
+  height: 50px;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+button {
+  width: 200px;
+  margin-right: 50px;
+}
+
+input {
+  width: 200px;
+}
+
+label {
+  width: 200px;
+}
+
+main {
+ height: 500px;
+ width: 400px;
+ background-color: white;
+ align-self: center;
+ border-radius: 20px;
+}
+
+.Header {
+  height: 140px;
+  font-size: 35px;
+  color: rgb(27, 15, 15);
+}
+body {
+  background-image: linear-gradient(to right, rgb(219, 142, 60), rgb(227, 50, 40));
+
+}
+.info {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(55, 52, 52);
+}
+.length {
+  margin-top: 30px;
+}
+.enter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 45px;
+}
+.submit{
+  margin-top: 30px;
+  border-style: solid;
+  border-color: rgb(3, 180, 62);
+  background-image: linear-gradient( to right, rgb(230, 239, 230), rgb(226, 226, 237));
+}
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  
+  padding-top: 20px;
+  padding-right: 10px;
+  background: linear-gradient(to right, rgb(219, 142, 60), rgb(227, 50, 40));
+  -webkit-background-clip: text;
+  color: transparent;
+}
