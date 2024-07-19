@@ -31,5 +31,5 @@ npm run dev
 ```
 
 **Contributing**
-* Feel free to fork the project, create a branch, and submit a pull request. We welcome improvements and new features!
+* Feel free to fork the project, create a branch, and submit a pull request. Improvements and new features are welcomed!
 
