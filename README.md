@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# 🚗 ETA Calculator 🕒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the ETA Calculator! This handy tool helps you estimate the time of arrival based on your speed and distance. Perfect for road trips, deliveries, or just satisfying your curiosity!
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Example**
+* Speed: 60 mph
+* Distance: 120 miles
+* ETA: 2 hours
 
-## Expanding the ESLint configuration
+**Tech Stack**
+* ⚛️ React with TypeScript for a robust and scalable UI.
+* 🎨 CSS for styling.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+**How to Run**
+* Clone the repository.
+``` bash
+git clone git@github.com:Masterneo11/eta-calculator-ts.git  
+```
+* Install dependencies:
+``` bash 
+npm install
+```
+* Start the application: 
+```bash 
+npm start
+```
+* Run localhost: 
+``` bash 
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Contributing**
+* Feel free to fork the project, create a branch, and submit a pull request. We welcome improvements and new features!
+

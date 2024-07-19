@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
 
 const EtaCalculation: React.FC = () => {
+    // usestate for speed/distance  being set to string w/ generics
     const [speed, setSpeed] = useState<number | string>("");
     const [distance, setDistance] = useState<number | string>("");
+    // usestate for result set to null
     const [result, setResult] = useState<number | null>(null);
 
     const handleSpeedInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
+        // storing the event to a value
         const value = event.target.valueAsNumber;
         // ternary oper if Nan if false return Value 
         setSpeed(isNaN(value) ? "" : value);
     }
     const handleDistance = (event: React.ChangeEvent<HTMLInputElement>): void => {
+        // storing the event to a value
         const value = event.target.valueAsNumber;
         // ternary operator if NaN if false return Value 
         setDistance(isNaN(value) ? "" : value);
-
     }
     const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
+        // prevent default for custom form handling logic below 
         event.preventDefault();
         const speedNumber = Number(speed);
         const distanceNumber = Number(distance);
@@ -58,7 +62,9 @@ const EtaCalculation: React.FC = () => {
                     title='button'
                 > Enter </button>
             </div>
+            {/*conditionally render the following content only if `result ` is not null*/}
             {result !== null && (
+                // code for rendering content below 
                 <div className="result">
                     <p>Eta :    {result.toFixed(2)} hours</p>
                 </div>
